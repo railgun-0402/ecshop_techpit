@@ -1,3 +1,4 @@
+import 'package:ecshop_techpit/pages/home_page/home_page.dart';
 import 'package:flutter/material.dart';
 
 class App extends StatelessWidget {
@@ -6,12 +7,10 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        theme: ThemeData.light(),
-        home: const Scaffold(
-          body: Center(
-            child: Text('Hello world'),
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
         ),
-      ),
+        home: const HomePage(),
     );
   }
 }
