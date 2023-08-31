@@ -16,8 +16,8 @@ class App extends StatelessWidget {
             elevation: 0,
             systemOverlayStyle: SystemUiOverlayStyle.dark,
           ),
-          textTheme: GoogleFonts.montserratTextTheme(
-          ),
+          textTheme: GoogleFonts.montserratTextTheme(),
+          highlightColor: Colors.lightBlue[100],
         ),
         /// dark
         darkTheme: ThemeData.dark().copyWith(
@@ -25,6 +25,7 @@ class App extends StatelessWidget {
           textTheme: GoogleFonts.montserratTextTheme(
             ThemeData.dark().textTheme,
           ),
+          highlightColor: Colors.lightBlue[700],
         ),
         home: const HomePage(),
     );

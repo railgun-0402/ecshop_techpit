@@ -26,7 +26,7 @@ class ItemCategories extends StatelessWidget {
                 width: 80,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: Colors.blue,
+                  color: Theme.of(context).highlightColor,
                 ),
                 child: Image.asset(
                   'assets/icons/$category.png',

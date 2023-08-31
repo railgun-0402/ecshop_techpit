@@ -14,18 +14,16 @@ class HomeHeader extends StatelessWidget {
           children: [
             Text(
               'Welcome, Taro.',
-              style: GoogleFonts.montserrat(
-                  fontSize: 28,
-                  fontWeight: FontWeight.w600
-              ),
+              style: Theme.of(context)
+              .textTheme
+              .headline5
+              ?.copyWith(fontWeight: FontWeight.bold),
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Text(
                 'Summer Collection 2022 is now available.',
-                style: GoogleFonts.montserrat(
-                    fontSize: 16
-                ),
+                style: Theme.of(context).textTheme.subtitle1,
               ),
             )
           ],
