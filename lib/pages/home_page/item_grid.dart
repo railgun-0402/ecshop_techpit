@@ -58,14 +58,14 @@ class _ItemCard extends StatelessWidget {
             padding: const EdgeInsets.symmetric(vertical: 2),
             child: Text(
               'Super Shoes 1',
-               style: GoogleFonts.montserrat(),
+               style: Theme.of(context).textTheme.bodyLarge,
              ),
           ),
            Padding(
              padding: const EdgeInsets.symmetric(vertical: 2),
              child: Text(
                '12800yen',
-               style: GoogleFonts.montserrat(),
+               style: Theme.of(context).textTheme.bodyMedium,
              ),
            ),
       ],
